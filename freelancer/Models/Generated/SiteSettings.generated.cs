@@ -18,7 +18,7 @@ using Umbraco.Extensions;
 
 namespace Umbraco.Cms.Web.Common.PublishedModels
 {
-	/// <summary>Site Settings</summary>
+	/// <summary>SiteSettings</summary>
 	[PublishedModel("siteSettings")]
 	public partial class SiteSettings : PublishedContentModel, IFooterProperties, IMainNavigationProperties, ISiteSettingsProperties
 	{
@@ -63,7 +63,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.8.0+a486d5d")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("mainNavigation")]
-		public virtual string MainNavigation => global::Umbraco.Cms.Web.Common.PublishedModels.MainNavigationProperties.GetMainNavigation(this, _publishedValueFallback);
+		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockGridModel MainNavigation => global::Umbraco.Cms.Web.Common.PublishedModels.MainNavigationProperties.GetMainNavigation(this, _publishedValueFallback);
 
 		///<summary>
 		/// Site Name: Enter the name of the site. This will appear in the browser title and in the main top left logo for the site.
